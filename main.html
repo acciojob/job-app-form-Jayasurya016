@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Job Application Form</title>
-</head>
-<body>
+	<head>
+		<body>
+			<form method="POST">
+  <label for="name">Name*</label>
+  <input type="text" id="name" name="name" required />
 
-  <h1>Job Application Form</h1>
+  <label for="email">Email*</label>
+  <input type="email" id="email" name="email" required />
 
-  <form method="post">
+  <label>Gender*</label>
+  <input type="radio" id="male" name="gender" value="male" required />
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female" required />
+  <label for="female">Female</label>
 
-    <label for="name">Name*:</label>
-    <input type="text" id="name" name="name" required>
-    
+  <label for="laptop">Laptop Brand</label>
+  <select id="laptop" name="laptop">
+    <option value="apple">Apple</option>
+    <option value="asus">Asus</option>
+    <option value="hp">HP</option>
+  </select>
 
-    <label for="email">Email*:</label>
-    <input type="email" id="email" name="email" required>
-    
+  <label for="age">Age*</label>
+  <input type="number" id="age" name="age" required />
 
-    <label>Gender*:</label>
-    <input type="radio" id="male" name="gender" value="Male" required>
-    <label for="male">Male</label>
+  <label for="dob">Date of Birth*</label>
+  <input type="date" id="dob" name="dob" required />
 
-    <input type="radio" id="female" name="gender" value="Female" required>
-    <label for="female">Female</label>
+  <label for="password">Password*</label>
+  <input type="password" id="password" name="password" required />
 
-    <input type="radio" id="other" name="gender" value="Other" required>
-    <label for="other">Other</label>
-    
+  <label for="portfolio">Portfolio URL</label>
+  <input type="url" id="portfolio" name="portfolio" />
 
-    <label for="laptop">Laptop Brands:</label>
-    <select id="laptop" name="laptop">
-      <option value="">--Select Brand--</option>
-      <option value="Apple">Apple</option>
-      <option value="Asus">Asus</option>
-      <option value="HP">HP</option>
-    </select>
-    
+  <button type="submit">Submit</button>
+</form>
 
-    <label for="age">Age*:</label>
-    <input type="number" id="age" name="age" required>
-    <br><br>
-
-    <label for="dob">Date of Birth*:</label>
-    <input type="date" id="dob" name="dob" required>
-    
-
-    <label for="password">Password*:</label>
-    <input type="password" id="password" name="password" required>
-    
-
-    <label for="portfolio">Portfolio URL:</label>
-    <input type="url" id="portfolio" name="portfolio">
-    
-
-    <button type="submit">Submit</button>
-
-  </form>
-
-</body>
+		</body>
+	</head>
 </html>
